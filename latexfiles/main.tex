@@ -1,0 +1,67 @@
+\documentclass[twoside]{report}
+\let\cleardoublepage\clearpage
+% ============================
+% Packages
+% ============================
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+
+\geometry{margin=1in}
+\setstretch{1.15}
+
+% ============================
+% Header & Footer
+% ============================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+
+% ============================
+% Code block styling
+% ============================
+\definecolor{lightgray}{gray}{0.95}
+\lstset{
+    backgroundcolor=\color{lightgray},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single
+}
+
+% ============================
+% Title Page
+% ============================
+\title{
+    \Huge\textbf{Threat Analysis and Detection Engineering Handbook} \\
+    \Large Windows, Linux, SPL, and KQL Edition
+}
+\author{\Large Prepared for Leonard}
+\date{2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+\input{Part_I.tex}
+\input{Part_II.tex}
+\input{Part_III.tex}
+\input{Part_IV.tex}
+\input{Part_V.tex}
+\input{Part_VI.tex}
+\input{Part_VII.tex}
+\input{Part_VIII.tex}
+\input{Part_9.tex}
+\input{Part_10.tex}
+\end{document}
